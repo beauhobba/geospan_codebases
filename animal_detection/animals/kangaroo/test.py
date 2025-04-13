@@ -111,7 +111,7 @@ class TFRecord:
             except Exception as e:
                 logging.warning(f"Skipping {group.filename} due to error: {e}")
                 continue
-        logging.info("Successfully created the TFRecords: {}".format(output_path))
+        logging.info(f"Successfully created the TFRecords: {output_path}")
 
 
 if __name__ == "__main__":
